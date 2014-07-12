@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.expand_path('../../lib', __FILE__)
+
+require 'gitlab/workload_generator/pusher_cli'
+
+Gitlab::WorkloadGenerator::PusherCli.new(ENV).run
